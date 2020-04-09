@@ -1,20 +1,20 @@
 import React from 'react';
 import { Button, View, Text } from 'react-native';
-import codePush from "react-native-code-push";
+import codePush from 'react-native-code-push';
 
 class Home extends React.Component {
-  static navigationOptions = {
-    title: 'Home'
-   };
-   
-   onButtonPress() 
-   {
-       codePush.sync({
-         updateDialog: true,
-         installMode: codePush.InstallMode.IMMEDIATE
-       });
-   }
+    static navigationOptions = {
+        title: 'Home'
+    };
 
+    onButtonPress()
+    {
+        codePush.sync({
+            updateDialog: true,
+            installMode: codePush.InstallMode.IMMEDIATE
+        });
+    }
+   
     render() {
         return (
         <View style={{ 

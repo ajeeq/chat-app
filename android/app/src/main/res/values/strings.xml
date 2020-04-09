@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Chat App</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">cueDAmdHW0fwMCny_dm205EAjfGsRELd_tT5Y</string>
 </resources>
