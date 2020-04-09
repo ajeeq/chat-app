@@ -6,6 +6,14 @@ class Home extends React.Component {
   static navigationOptions = {
     title: 'Home'
    };
+   
+   onButtonPress() 
+   {
+       codePush.sync({
+         updateDialog: true,
+         installMode: codePush.InstallMode.IMMEDIATE
+       });
+   }
 
     render() {
         return (
@@ -26,14 +34,6 @@ class Home extends React.Component {
 
         </View>
         );
-    }
-
-    onButtonPress() 
-    {
-        codePush.sync({
-          updateDialog: true,
-          installMode: codePush.InstallMode.IMMEDIATE
-        });
     }
 }
 export default Home;
