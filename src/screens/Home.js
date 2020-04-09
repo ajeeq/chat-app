@@ -20,6 +20,7 @@ class Home extends React.Component {
             />
             
             <TouchableOpacity onPress={this.onButtonPress}>
+                <Text>click below</Text>
                 <Text>Check for updates</Text>
             </TouchableOpacity>
 
